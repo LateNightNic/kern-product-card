@@ -14,11 +14,18 @@ html, body {
     color: var(--primary-font-color);
 }
 
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5rem 0;
+    padding: 0 3rem;
+}
+
 .product-container {
-    margin: 5% auto 0;
     padding: 2rem;
     background-color: var(--primary-bg-color);
-    width: 50%;
+    width: calc(33% - 3.33rem);
     border-radius: 16px;
     box-shadow: 4px 4px 12px 0px rgba(111, 78, 55, 0.5);
 }
@@ -32,11 +39,10 @@ html, body {
     overflow: hidden;
 }
 
-.product-img {
+.product-gardamond {
     font-family:"EB Garamond";
     text-align: center;
     font-size: 10rem;
-    
 }
 
 /* Tagging system */
@@ -47,6 +53,7 @@ html, body {
     margin: 0 0 2rem 0;
     font-size: 0.7rem;
     font-weight: 600;
+    overflow: hidden;
 }
 
 .tag, .category {
@@ -68,6 +75,7 @@ html, body {
     display: flex;
     flex-direction: column;
     padding: 2rem 0;
+    overflow: hidden;
 }
 
 .product-name {
@@ -112,4 +120,58 @@ html, body {
     border: 1px solid var(--primary-font-color);
     color: var(--primary-font-color);
     background-color:var(--primary-bg-color);
+}
+
+/* Font 2 */
+.product-aladin {
+    font-family:"Aladin";
+    text-align: center;
+    font-size: 10rem;
+}
+
+/* Font 3 */
+
+.product-poetsen-one {
+    font-family:"Poetsen One";
+    text-align: center;
+    font-size: 10rem;
+}
+
+
+
+/* Tablet Screen */
+
+@media (max-width: 1280px) {
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-container {
+        width: 80%;
+    }
+
+    .product-gardamond, .product-aladin, .product-poetsen-one {
+        font-size: 8rem;
+    }
+
+}
+
+/* Mobile Screen */
+
+@media (max-width: 640px) {
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .product-container {
+        width: 100%;
+    }
+
+    .product-gardamond, .product-aladin, .product-poetsen-one {
+        font-size: 6rem;
+    }
+
 }
