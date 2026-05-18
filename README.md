@@ -1,5 +1,5 @@
 # Kern product card
-This is a fictional ecommerce product card for the fictional type foundry, KERN. 
+This is a fictional ecommerce product card for the fictional type foundry, KERN. It features 3 cards with different fonts. 
 
 ## About
 It provides a preview of a font that a user may wish to trial or license. Users will see which category the font belongs to, it's status as a new product or bestseller and price. 
